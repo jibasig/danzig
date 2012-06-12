@@ -27,7 +27,7 @@ def before_request():
     try:
         conn = psycopg2.connect("dbname='danzig' user='jibsix' host='localhost' password='t3stt3st'");
     except:
-        print "I am unable to connect to the database"
+        print "Unable to connect to the database"
     cur = conn.cursor()
     g.cur = cur
     getGroups()
