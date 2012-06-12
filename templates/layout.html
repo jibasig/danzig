@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Soccer</title>
+{% assets "css_all" %}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" />
+{% endassets %}
+</head>
+<body>
+<div id="header">
+European Soccer Championship
+</div>
+<div id="groups"><div id="spinner"><img src="{{ url_for('static', filename='spinner.gif') }}"></img></div></div>
+{# <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> #}
+{% assets "jquery" %}
+    <script>window.jQuery || document.write('<script src="{{ ASSET_URL }}"><\/script>')</script>
+{% endassets %}
+{% assets "main" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"> </script>
+{% endassets %}
+</body>
+</html>
+

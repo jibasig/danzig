@@ -1,0 +1,14 @@
+<div class="teams{{group}}">
+<table id="rounded-corner" summary="Employee Pay Sheet">
+<thead>
+<tr>
+<th scope="col">Team</th>
+</tr>
+</thead>
+<tbody>
+{% for team in teams %}
+    <tr><td>{{ team }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>

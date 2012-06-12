@@ -1,0 +1,30 @@
+#header {
+	left: 0;
+	padding-left: 5em;
+	background: #ccc;}
+
+#spinner {
+	margin-top: 2em;
+	margin-left: 12em;}
+
+body {
+	margin: 0;
+	background: #fff;
+	font-size: 36px;}
+
+.teamsA {
+	float: left;
+	margin: 15px;}
+
+.teamsB {
+	float: left;
+	margin: 15px;}
+
+.teamsC {
+	float: left;
+	margin: 15px;}
+
+.teamsD {
+	float: left;
+	margin: 15px;}
+

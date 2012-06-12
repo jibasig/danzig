@@ -1,0 +1,51 @@
+$c_gray: #ccc;
+$gradient_from: #444444
+$gradient_to: #999999
+#header {
+            background: $c_gray;
+            padding-left: 5em;
+            left: 0em;
+        }
+#spinner {
+            margin-top: 2em;
+            margin-left: 12em;
+        }
+@mixin gradient($g_from, $g_to) {  
+  background-color: $g_from;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($g_from), to($g_to));
+  background-image: -webkit-linear-gradient(top, $g_from, $g_to);
+  background-image:    -moz-linear-gradient(top, $g_from, $g_to);
+  background-image:     -ms-linear-gradient(top, $g_from, $g_to);
+  background-image:      -o-linear-gradient(top, $g_from, $g_to);
+}
+
+body {
+    font-size: 36px;
+    margin: 0;
+    background: white;
+}
+
+@mixin round{
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+@mixin group{
+/*    @include round;
+    @include gradient(#234234, #999999); */
+    float: left;
+    margin: 15px;
+}
+.teamsA {
+    @include group;
+}
+.teamsB {
+    @include group;
+}
+.teamsC {
+    @include group;
+}
+.teamsD {
+    @include group;
+}   
